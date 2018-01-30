@@ -18,7 +18,8 @@ public class TicketCreationNew {
   {
 
 
-  Scanner scanner = new Scanner( System.in );
+
+Scanner scanner = new Scanner( System.in );
 
   System.out.print( "Enter the URL for Regression Testing: " );
   String url = scanner.nextLine();
@@ -34,7 +35,7 @@ public class TicketCreationNew {
 
 
 
-  System.setProperty("webdriver.chrome.driver", "C:\\MySAP_Doc\\Automation\\ADDITIONAL DRIVERS\\chromedriver.exe");
+  System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
   WebDriver driver = new ChromeDriver();
 
   driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
