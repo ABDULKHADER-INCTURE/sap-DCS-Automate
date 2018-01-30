@@ -33,9 +33,11 @@ Scanner scanner = new Scanner( System.in );
   System.out.println( "UserName = " + uname );
   System.out.println( "Password = " + pwd );
 
+  
+  String Dir = System.getProperty("user.dir");
+  //String Dir = System.out.println("Dir  : "+System.getProperty("user.dir")+"\\ChromeDriver");
 
-
-  System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+  System.setProperty("webdriver.chrome.driver", Dir + "\\chromedriver.exe");
   WebDriver driver = new ChromeDriver();
 
   driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
